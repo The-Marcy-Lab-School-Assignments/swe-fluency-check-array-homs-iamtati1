@@ -10,19 +10,27 @@ const sampleWords = ['dog', 'blueberry', 'alabama', 'earth', 'football'];
 
 // Problem 1
 const printEveryWord = (words) => {
-
+  let array = words
 };
+console.log(sampleWords.join(" "));
 
 // Problem 2
-const getStringLengths = (strings) => {
-
+const getStringLengths = (strings) => { //findIndex()
+  return strings.map((str) => str.length);
 };
+console.log(getStringLengths(['dog', 'blueberry', 'alabama', 'earth', 'football']));
 
 // Problem 3
 const sortWordsZtoA = (words) => {
-
+  return [...words].sort((a, b) => isAscending ? b - a : a - b
+  );
 };
 
+const unsortedNums = ['dog', 'blueberry', 'alabama', 'earth', 'football'];
+const bigToSmall = sortWordsZtoA(unsortedNums, true);
+console.log(bigToSmall);
+console.log(sortedNums); // Want to return 
+console.log(sortWordsZtoA);
 /* -------------------------------------------- */
 /* --------------NUMBER PROBLEMS--------------- */
 /* -------------------------------------------- */
